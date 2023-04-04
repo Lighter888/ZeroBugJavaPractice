@@ -7,6 +7,7 @@ public class Main {
         int numberTask = random.nextInt(80);
         System.out.println(numberTask);
 
+//Hello
 
     }
 }
