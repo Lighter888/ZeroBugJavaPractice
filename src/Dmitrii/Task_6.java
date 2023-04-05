@@ -25,5 +25,7 @@ public class Task_6 {
         System.out.println("I got it guys!");
         System.out.println("One more time!");
         System.out.println("And again!");
+        System.out.println("Experiment with merge1");
+
     }
 }
