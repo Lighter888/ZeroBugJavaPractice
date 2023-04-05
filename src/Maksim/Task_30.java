@@ -1,5 +1,7 @@
 package Maksim;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -14,26 +16,35 @@ that, given an integer N (1 < N < 100), returns an array containing N unique int
    (but there are many more correct answers).
  */
 public class Task_30 {
+    public static int[] unique(int num) {
+        if (num > 1 && num < 100) {
+            int[] arr = new int[num];
+            int sum = 0;
+            Random random = new Random();
+            int i = 0;
+            while (i < num - 1) {
+                int temp = random.nextInt(-num, num);
+                boolean contains = false;
+                for (int j = 0; j < i; j++) {
+                    if (arr[j] == temp) {
+                        contains = true;
+                        break;
+                    }
+                }
+                if (!contains) {
+                    arr[i] = temp;
+                    sum += temp;
+                    i++;
+                }
+            }
+            arr[num - 1] = -sum;
+            return arr;
+        }
+        return null;
+    }
     public static void main(String[] args) {
 
-        int N = 8;
-        int[] arr = new int[N];
-        Random random = new Random();
-        arr[0] = random.nextInt(-N, N);
-        int sum = arr[0];
-        int element = arr[0];
-        for (int i = 1; i < arr.length; i++) {
-            arr[i] = random.nextInt(-N, N);
-            if (element == arr[i]){
-                arr[i] = random.nextInt(-N, N);
-            }
-            element = arr[i];
-            if (i + 1 == arr.length){
-                arr[i] = - sum;
-                break;
-            }
-            sum += arr[i];
-        }
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(unique(10)));
+
     }
 }
