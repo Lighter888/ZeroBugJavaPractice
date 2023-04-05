@@ -22,5 +22,6 @@ public class Task_6 {
             }
         }
         System.out.println(result);
+        System.out.println("111");
     }
 }
