@@ -24,5 +24,6 @@ public class Task_6 {
         System.out.println(result);
         System.out.println("I got it guys!");
         System.out.println("One more time!");
+        System.out.println("And again!");
     }
 }
