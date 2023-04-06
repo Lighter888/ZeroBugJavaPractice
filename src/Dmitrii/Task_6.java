@@ -26,7 +26,7 @@ public class Task_6 {
         System.out.println("One more time!");
         System.out.println("And again!");
         System.out.println("Experiment with merge2");
-        System.out.println("After stash");
+
 
     }
 }
