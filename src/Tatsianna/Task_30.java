@@ -1,7 +1,4 @@
 package Tatsianna;
-
-import java.util.Arrays;
-
 /*
 //30
 Array -- N unique integers that sum up to 0
@@ -13,22 +10,21 @@ that, given an integer N (1 < N < 100), returns an array containing N unique int
    (but there are many more correct answers).
  */
 public class Task_30 {
-
-    public static int[] sumZero(int n) {
+    public int[] sumZero(int n) {
     int[] answer = new int[n];
+    int index = 0;
 
-    if (n % 2 != 0) {
-        answer[n / 2] = 0;
+    if (n % 2 == 1)
+        answer[index++] = 0;
+
+    n /= 2;
+
+    for (int i = 1; i <= n; i++) {
+        answer[index++] = i;
+        answer[index++] = -i;
     }
-    for (int i = 0; i < n / 2; i++) {
-        answer[i] =  - (i + 1) * 2;
-        answer[n - i - 1] = (1 + i) * 2;
-        }
+
     return answer;
-    }
-    public static void main(String[] args) {
-
-        System.out.println(Arrays.toString(sumZero(10)));
     }
 }
 
