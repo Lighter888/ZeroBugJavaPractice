@@ -10,6 +10,7 @@ that, given an integer N (1 < N < 100), returns an array containing N unique int
    (but there are many more correct answers).
  */
 public class Task_30 {
+
     public int[] sumZero(int n) {
     int[] answer = new int[n];
     int index = 0;
