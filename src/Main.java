@@ -6,5 +6,6 @@ public class Main {
         int numberTask = random.nextInt(80);
         System.out.println(numberTask);
 
+        // Task 80 was skipped
     }
 }
