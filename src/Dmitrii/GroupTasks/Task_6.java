@@ -1,4 +1,4 @@
-package Dmitrii;
+package Dmitrii.GroupTasks;
 
 /*
 String h="AAABBBCCC";
@@ -22,11 +22,8 @@ public class Task_6 {
             }
         }
         System.out.println(result);
-        System.out.println("I got it guys!");
-        System.out.println("One more time!");
-        System.out.println("And again!");
-        System.out.println("Experiment with merge2");
+        System.out.println("From git");
 
-
+        System.out.println("Ooops");
     }
 }
