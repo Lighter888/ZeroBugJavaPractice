@@ -39,4 +39,5 @@ public class Task_59 {
         System.out.println("Reversed words sentence1 is: " + newSentence1);
         System.out.println("*********************************************************");
     }
+    // Added new comment
 }
