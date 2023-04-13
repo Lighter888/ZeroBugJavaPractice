@@ -1,4 +1,4 @@
-package Dmitrii;
+package Dmitrii.GroupTasks;
 
 import java.util.*;
 
