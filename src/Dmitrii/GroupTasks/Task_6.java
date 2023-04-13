@@ -1,4 +1,4 @@
-package Dmitrii;
+package Dmitrii.GroupTasks;
 
 /*
 String h="AAABBBCCC";
@@ -22,6 +22,7 @@ public class Task_6 {
             }
         }
         System.out.println(result);
+        System.out.println("From git");
 
         System.out.println("Ooops");
     }
