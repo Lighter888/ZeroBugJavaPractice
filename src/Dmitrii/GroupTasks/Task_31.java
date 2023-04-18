@@ -33,5 +33,4 @@ public class Task_31 {
         System.out.println(Arrays.toString(a));
         System.out.println(Arrays.toString(b));
     }
-
 }
