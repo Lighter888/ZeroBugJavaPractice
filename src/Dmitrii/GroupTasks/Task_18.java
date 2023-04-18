@@ -18,6 +18,7 @@ public class Task_18 {
             if(arr[i]%division==0){
                 divisibleByNum +=  arr[i] + ", ";
             }
+
         }
         System.out.println(divisibleByNum);
 
