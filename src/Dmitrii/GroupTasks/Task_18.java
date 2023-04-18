@@ -20,5 +20,6 @@ public class Task_18 {
             }
         }
         System.out.println(divisibleByNum);
+
     }
 }
