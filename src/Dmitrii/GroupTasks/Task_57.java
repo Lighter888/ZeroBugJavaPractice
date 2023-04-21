@@ -13,24 +13,24 @@ public class Task_57 {
 //            nums -> [1, 1, 2, 3, 4, 3, 4]
 //            2
 
-////   Dima's solution through the regular Array
-//        int[] nums = {1, 1, 4, 4, 3, 3, 2};
-//        IntStream nums1 = Arrays.stream(nums).sorted();
-//        int[] sortedNums = nums1.toArray();
-//        for (int i = 0; i < sortedNums.length; i++) {
-//            for (int j = i + 1; j < sortedNums.length; j++) {
-//                if (sortedNums[i] == sortedNums[j]) {
-//                    i = j;
-//                    break;
-//                } else {
-//                    System.out.println("Dima - " + sortedNums[i]);
-//                    if (j < 6) {
-//                        i = 6;
-//                        break;
-//                    }
-//                }
-//            }
-//        }
+//   Dima's solution through the regular Array
+        int[] nums = {1, 1, 4, 4, 3, 3, 2};
+        IntStream nums1 = Arrays.stream(nums).sorted();
+        int[] sortedNums = nums1.toArray();
+        for (int i = 0; i < sortedNums.length; i++) {
+            for (int j = i + 1; j < sortedNums.length; j++) {
+                if (sortedNums[i] == sortedNums[j]) {
+                    i = j;
+                    break;
+                } else {
+                    System.out.println("Dima - " + sortedNums[i]);
+                    if (j < 6) {
+                        i = 6;
+                        break;
+                    }
+                }
+            }
+        }
 
 
 //   Original solution through the frequency method.
