@@ -27,29 +27,27 @@ public class Task_80 {
 //            }
 //        }
 //        System.out.println(map.toString());
-//    }
 
 
-//        Integer arr[]={22,101,102,101,102,101,525,88};
-//        Map<Integer,Integer>h=new LinkedHashMap<>();
-//
-//        for(int i=0;i<arr.length;i++){
-//            int c=Collections.frequency(Arrays.asList(arr),arr[i]);
-//            if (!h.keySet().equals(arr[i])){
-//                h.put(arr[i],c);
-//            }
-//        }
-//        int max=Collections.max(h.values());
-//
-//        ArrayList<Integer>g=new ArrayList<>();
-//
-//        for(Integer q:h.keySet()){
-//            if(h.get(q)==max){
-//                g.add(q);
-//            }
-//        }
-//        System.out.println(g);
+        Integer arr[]={22,101,102,101,102,101,525,88};
+        Map<Integer,Integer>h=new LinkedHashMap<>();
 
+        for(int i=0;i<arr.length;i++){
+            int c=Collections.frequency(Arrays.asList(arr),arr[i]);
+            if (!h.keySet().equals(arr[i])){
+                h.put(arr[i],c);
+            }
+        }
+        int max=Collections.max(h.values());
+
+        ArrayList<Integer>g=new ArrayList<>();
+
+        for(Integer q:h.keySet()){
+            if(h.get(q)==max){
+                g.add(q);
+            }
+        }
+        System.out.println(g);
 
     }// Main
 }// Class

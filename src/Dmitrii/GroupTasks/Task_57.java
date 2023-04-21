@@ -13,8 +13,8 @@ public class Task_57 {
 //            nums -> [1, 1, 2, 3, 4, 3, 4]
 //            2
 
-//   Dima's solution through the regular Array
-        int[] nums = {1, 1, 4, 4, 3, 3, 2};
+//   Dima's solution through the regular Array (not correct! Correct only for current array value)
+        int[] nums = {1, 1, 2, 3, 4, 3, 4};
         IntStream nums1 = Arrays.stream(nums).sorted();
         int[] sortedNums = nums1.toArray();
         for (int i = 0; i < sortedNums.length; i++) {
@@ -24,8 +24,8 @@ public class Task_57 {
                     break;
                 } else {
                     System.out.println("Dima - " + sortedNums[i]);
-                    if (j < 6) {
-                        i = 6;
+                    if (j < nums.length-1) {
+                        i = nums.length-1;
                         break;
                     }
                 }
@@ -33,20 +33,19 @@ public class Task_57 {
         }
 
 
-//   Original solution through the frequency method.
-//   Frequency method as a constructor from Collections class ask to assign two parameters array as List and int.
-//   Then it iterates through the list and return result amount of duplicate numbers in comparison. Ex. (Arrays.asList(nums55), nums55[i]) --> (Arrays.asList(1, 1, 2, 3, 4, 3, 4), and 1 then 1 then 2 then 3 etc.)
-//   After each time it return count of duplicate value, and then it compares into if statement, if 1 meaning unique --> Print tish value.
-        Integer nums55[] = {1, 1, 2, 3, 4, 3, 4};
+////   Original solution through the frequency method.
+//        Integer nums55[] = {1, 1, 2, 3, 4, 3, 4, 7, 4, 9};
+//
+//        for (int i = 0; i < nums55.length; i++) {
+//            //   Frequency method as a constructor from Collections class ask to assign two parameters array as List and int.
+//            //   Then it iterates through the list and return result amount of duplicate numbers in comparison.
+//            //   Ex. (Arrays.asList(nums55), nums55[i]) --> (Arrays.asList(1, 1, 2, 3, 4, 3, 4), and 1 then 1 then 2 then 3 etc.)
+//            //   After each time it return count of duplicate value, and then it compares into if statement, if 1 meaning unique --> Print this value.
+//            int count = Collections.frequency(Arrays.asList(nums55), nums55[i]);
+//            if (count == 1) {
+//                System.out.println("Original - " + nums55[i]);
+//            }
+//        }
 
-        for (int i = 0; i < nums55.length - 1; i++) {
-            int count = Collections.frequency(Arrays.asList(nums55), nums55[i]);
-            if (count == 1) {
-                System.out.println("Original - " + nums55[i]);
-            }
-        }
-
-
-    }
-
-}
+    }//main
+}//class
