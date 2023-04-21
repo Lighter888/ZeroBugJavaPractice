@@ -18,12 +18,12 @@ public class Task_3 {
 //        temp = a;
 //        a = b;
 //        b = temp;
-//        System.out.println(a + "\n" + b);
+//        System.out.println("a==" + a + "\n" + "b==" + b);
 
-        //    Solution 2
+//    Solution 2
         a = a + b;
         b = a - b;
         a = a - b;
-        System.out.println(a + "\n" + b);
+        System.out.println("a==" + a + "\n" + "b==" + b);
     }
 }
