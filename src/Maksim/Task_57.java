@@ -11,7 +11,6 @@ public class Task_57 {
     //            2
 
     public static int findUniqElem1(Integer[] arr) {
-
         int result = 0;
         List<Integer> listNum = new ArrayList<>(Arrays.asList(arr));
 
