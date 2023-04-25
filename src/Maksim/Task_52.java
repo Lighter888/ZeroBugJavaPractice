@@ -42,7 +42,7 @@ public class Task_52 {
 
     public static void main(String[] args) {
 
-        //Overloading method
+        //Overloading method if method none static call instance of class Task_52
         Task_52 task52 = new Task_52();
 
         System.out.println(task52.uniqueElementArray(new Integer[] {6,6,7,7,8,9}));
