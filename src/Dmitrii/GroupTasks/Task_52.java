@@ -17,9 +17,11 @@ public class Task_52 {
 //        Note: Apply method overloading
 
 
-        Integer[] arr1 = {6, 6, 7, 7, 8, 9, 1};
+
+        Integer[]   arr1 = {6, 6, 7, 7, 8, 9, 1};
         Integer[][] arr2 = {{1, 1, 2, 3, 3},
-                {6, 6, 7, 7, 8, 9}};
+                            {6, 6, 7, 7, 8, 9}};
+
 
         System.out.println("Unique number(s) from array is: " + SolutionTask_52(arr1));
         System.out.println("Unique number(s) from multidimensional array is: " + SolutionTask_52(arr2));
