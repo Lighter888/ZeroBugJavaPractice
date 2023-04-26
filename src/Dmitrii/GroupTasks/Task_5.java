@@ -27,11 +27,11 @@ public class Task_5 {
 
         for (int i = 0; i < arrList.size(); i++) {
             for (int j = i+1; j < arrList.size(); j++) {
-                Integer tempIntI = arrList.get(i);
-                Integer tempIntJ = arrList.get(j);
-                if (tempIntI > tempIntJ){
-                    arrList.set(i, tempIntJ);
-                    arrList.set(j,tempIntI );
+                Integer intI = arrList.get(i);
+                Integer intJ = arrList.get(j);
+                if (intI > intJ){
+                    arrList.set(i, intJ);
+                    arrList.set(j,intI );
                 }
             }
         }
