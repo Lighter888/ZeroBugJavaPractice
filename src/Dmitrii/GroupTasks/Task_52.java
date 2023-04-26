@@ -7,29 +7,47 @@ import java.util.Collections;
 
 public class Task_52 {
 
-    public static void main (String[] args){
-        Integer[] arr = {6,6,7,7,8,9,1};
-        System.out.println("Unique number(s) is: " + SolutionTask_52 (arr));
+    public static void main(String[] args) {
 
-    }
-
-    public static String SolutionTask_52(Integer[] arr){
-
-//        write a method that can print out the unique elements from an int array
+        //        write a method that can print out the unique elements from an int array
 //
 //        Ex: {1,1,2,3,3} ==> 2
 //        {6,6,7,7,8,9} ==> 8 9
-//                --write a method that can print out the unique elements from a double array
+//        --write a method that can print out the unique elements from a double array
 //        Note: Apply method overloading
 
 
-         String result = "";
-         for(int i = 0; i < arr.length; i++){
-             int uniqueValueCount = Collections.frequency(Arrays.asList(arr), arr[i]);
-             if(uniqueValueCount==1){
-                 result  += arr[i].toString() + ", ";
-             }
-         }
+        Integer[]   arr1 = {6, 6, 7, 7, 8, 9, 1};
+        Integer[][] arr2 = {{1, 1, 2, 3, 3},
+                            {6, 6, 7, 7, 8, 9}};
+
+        System.out.println("Unique number(s) from array is: " + SolutionTask_52(arr1));
+        System.out.println("Unique number(s) from multidimensional array is: " + SolutionTask_52(arr2));
+
+    }
+
+    public static String SolutionTask_52(Integer[] arr1) {
+        String result = "";
+        for (int i = 0; i < arr1.length; i++) {
+            int uniqueValueCount = Collections.frequency(Arrays.asList(arr1), arr1[i]);
+            if (uniqueValueCount == 1) {
+                result += arr1[i].toString() + ", ";
+            }
+        }
+        return result;
+    }
+
+    public static String SolutionTask_52(Integer[][] arr2) {
+        String result = "";
+        for (int i = 0; i < arr2.length; i++) {
+
+            for (int j = 0; j < arr2[i].length; j++) {
+                int uniqueValueCount = Collections.frequency(Arrays.asList(arr2[i]), arr2[i][j]);
+                if (uniqueValueCount == 1) {
+                    result += arr2[i][j].toString() + ", ";
+                }
+            }
+        }
         return result;
     }
 }
