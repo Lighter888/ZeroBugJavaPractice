@@ -19,22 +19,20 @@ public class Task_5 {
 //2int[] arr = {1, 2, 3, 49, 6, 5};
 //    ArrayList<Integer> list = new ArrayList();
     public static void main (String[] args){
-
         ascendingOrder();
         descendingOrder();
         sortArray();
     }
 
     public static void ascendingOrder (){
-        ArrayList<Integer> arrList = new ArrayList<>(Arrays.asList(1, 10, 50, 2, 4, 50, 10, 3, 2,5, 4));
+        ArrayList<Integer> arrList = new ArrayList<>(Arrays.asList(1, 10, 2, 50, 4, 50, 10, 3, 2,5, 4));
 
-        for (int i = 0; i < arrList.size(); i++) {
-            for (int j = i+1; j < arrList.size(); j++) {
-                Integer intI = arrList.get(i);
-                Integer intJ = arrList.get(j);
-                if (intI > intJ){
-                    arrList.set(i, intJ);
-                    arrList.set(j,intI );
+        for(int i=0; i< arrList.size(); i++){
+            for(int j=0; j<arrList.size(); j++){
+                if(arrList.get(i)<arrList.get(j)){
+                    Integer temp = arrList.get(j);
+                    arrList.set(j, arrList.get(i));
+                    arrList.set(i, temp);
                 }
             }
         }
@@ -42,15 +40,14 @@ public class Task_5 {
     }
 
     public static void descendingOrder(){
-        ArrayList<Integer> arrList = new ArrayList<>(Arrays.asList(1, 10, 50, 2, 4, 50, 10, 3, 2,5, 4));
+        ArrayList<Integer> arrList = new ArrayList<>(Arrays.asList(1, 10, 50, 2, 4, 50, 10, 3, 2, 5, 4));
 
-        for (int i = 0; i < arrList.size(); i++) {
-            for (int j = i+1; j < arrList.size(); j++) {
-                Integer intI = arrList.get(i);
-                Integer intJ = arrList.get(j);
-                if (intI < intJ){
-                    arrList.set(i, intJ);
-                    arrList.set(j,intI );
+        for (int i=0; i<arrList.size(); i++){
+            for (int j=0; j< arrList.size(); j++){
+                if(arrList.get(i)>arrList.get(j)) {
+                    Integer temp = arrList.get(i);
+                    arrList.set(i,arrList.get(j));
+                    arrList.set(j, temp);
                 }
             }
         }
@@ -76,4 +73,3 @@ public class Task_5 {
         System.out.println(list);
        }
     }
-
