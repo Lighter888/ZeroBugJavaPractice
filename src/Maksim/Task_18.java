@@ -35,6 +35,7 @@ public class Task_18 {
     }
 
     public static void main(String[] args) {
+
         System.out.println(getDivisible(new int[100]));
     }
 }

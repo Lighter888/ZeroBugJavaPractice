@@ -18,7 +18,6 @@ public class Task_22 {
         }
         return numberIsPrime;
     }
-
     public static void main(String[] args) {
 
         List<Integer> primeList = new ArrayList<>();
@@ -28,5 +27,9 @@ public class Task_22 {
             }
         }
         System.out.println(primeList);
+
+        int num = 8;
+        System.out.println("Number %s is Prime ".formatted(num) + verifyNumberIsPrime(num));
+
     }
 }

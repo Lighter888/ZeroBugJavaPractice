@@ -3,17 +3,18 @@ package Maksim;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
 /*
-//30
+
 Array -- N unique integers that sum up to 0
 Write a function:
 that, given an integer N (1 < N < 100), returns an array containing N unique integers that
- sum up to 0. The function can return any such array. For example, given N = 4, the function
- could return [0,1,2,-3] or [-2,1, -4,5]. The answer [1, -1,1,3] would be incorrect
-  (because value 1 occurs twice). For N = 3 one of the possible answers is [-1,0,1]
-   (but there are many more correct answers).
+sum up to 0. The function can return any such array. For example, given N = 4, the function
+could return [0,1,2,-3] or [-2,1, -4,5]. The answer [1, -1,1,3] would be incorrect
+(because value 1 occurs twice). For N = 3 one of the possible answers is [-1,0,1]
+(but there are many more correct answers).
 
       int n=6;
         int []a=new int[n];
@@ -29,9 +30,11 @@ that, given an integer N (1 < N < 100), returns an array containing N unique int
         System.out.println(a.length);
         System.out.println(Arrays.toString(a));
  */
+
 public class Task_30 {
 
-    public static int[] unique(int num) {
+
+    public static int[] unique_2(int num) {
         if (num > 1 && num < 100) {
             int[] arr = new int[num];
             int sum = 0;
@@ -59,7 +62,7 @@ public class Task_30 {
     }
     public static void main(String[] args) {
 
-        System.out.println(Arrays.toString(unique(10)));
+        System.out.println(Arrays.toString(unique_2(10)));
 
      }
 }
