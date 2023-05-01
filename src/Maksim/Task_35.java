@@ -3,7 +3,7 @@ package Maksim;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class Java_35 {
+public class Task_35 {
     /*
 //    String s = "Seda, 20, Leyla, 30";
 //
