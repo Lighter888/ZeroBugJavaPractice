@@ -1,0 +1,22 @@
+package Dmitrii.GroupTasks;
+
+import java.util.Scanner;
+
+public class Task_54 {
+
+    public static void main (String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter 5 words: ");
+        System.out.println(largerWord(new String[]{scan.next(), scan.next(), scan.next(), scan.next(), scan.next()}));
+    }
+
+    public static String largerWord (String [] arrStr){
+        String maxWord = "";
+        for (int i = 0; i < arrStr.length; i++){
+            if(arrStr[i].length() > maxWord.length()){
+                maxWord = arrStr[i];
+            }
+        }
+        return maxWord;
+    }
+}
