@@ -28,8 +28,8 @@ public class JavaQuiz implements Quiz {
         questions.add("5*4=?");
         questions.add("22-11=?");
     }
-
-    public int answer (int index){
+    @Override
+    public int answer(int index){
         answers.add(4);
         answers.add(9);
         answers.add(4);
