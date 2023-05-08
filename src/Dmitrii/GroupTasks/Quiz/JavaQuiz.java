@@ -1,6 +1,7 @@
 package Dmitrii.GroupTasks.Quiz;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -9,12 +10,23 @@ public class JavaQuiz implements Quiz {
     ArrayList<String> questions = new ArrayList<>();
     ArrayList<Integer> answers = new ArrayList<>();
 
-    int correctAnswerd;
+    static Integer correctAnswer;
     int countOfQuestion = 1;
     int indexOfQuestion;
 
 
-
+    public static void scanner() {
+        correctAnswer = null;
+        while (correctAnswer == null) {
+            try {
+                Scanner scan = new Scanner(System.in);
+                correctAnswer = scan.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("TYPE ONLY DIGITS HERE");
+                correctAnswer = null;
+            }
+        }
+    }
     @Override
     public void setQuestions() {
         questions.add("2+2=?");
@@ -62,19 +74,19 @@ public class JavaQuiz implements Quiz {
 
     @Override
     public void answeredCorrect(){
-        correctAnswerd++;
+        correctAnswer++;
     }
 
     @Override
     public void calculateScore(){
-        double percentageOfAnswer = ((double)correctAnswerd / NUMBER_OF_ASKED_QUESTIONS) * 100;
+        double percentageOfAnswer = ((double) correctAnswer / NUMBER_OF_ASKED_QUESTIONS) * 100;
 
         if(Math.round(percentageOfAnswer)>=80){
-            System.out.println("Great job! You scored "+correctAnswerd+" out of "+NUMBER_OF_ASKED_QUESTIONS+" and you complete "+Math.round(percentageOfAnswer)+"% of quiz with positive answers!");
+            System.out.println("Great job! You scored "+ correctAnswer +" out of "+NUMBER_OF_ASKED_QUESTIONS+" and you complete "+Math.round(percentageOfAnswer)+"% of quiz with positive answers!");
         } else  if (Math.round(percentageOfAnswer)>=50){
-            System.out.println("Good job but can be improved! You scored "+correctAnswerd+" out of "+NUMBER_OF_ASKED_QUESTIONS+" and you complete "+Math.round(percentageOfAnswer)+"% of quiz with positive answers!");
+            System.out.println("Good job but can be improved! You scored "+ correctAnswer +" out of "+NUMBER_OF_ASKED_QUESTIONS+" and you complete "+Math.round(percentageOfAnswer)+"% of quiz with positive answers!");
         } else{
-            System.out.println("Try to practice more and try again! You scored "+correctAnswerd+" out of "+NUMBER_OF_ASKED_QUESTIONS+" and you complete "+Math.round(percentageOfAnswer)+"% of quiz with positive answers!");
+            System.out.println("Try to practice more and try again! You scored "+ correctAnswer +" out of "+NUMBER_OF_ASKED_QUESTIONS+" and you complete "+Math.round(percentageOfAnswer)+"% of quiz with positive answers!");
         }
 
     }
@@ -91,9 +103,10 @@ public class JavaQuiz implements Quiz {
         do {
             generateQuestions();
             System.out.println("Print your answer by using numbers");
-            Scanner scan = new Scanner(System.in);
-            int studentAnswer = scan.nextInt();
-            if(answer(indexOfQuestion)==studentAnswer){
+
+            scanner(); //Add function that handles incorrect input typing
+
+            if(answer(indexOfQuestion)== correctAnswer){
                 System.out.println("************************************" +
                                  "\n* Congratulations! Correct answer! *" +
                                  "\n************************************");
