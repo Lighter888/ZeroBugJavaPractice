@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 
 public class Task_24 {
+
 //    //24  USE ITERATOR
 //    ArrayList -- Remove "Ahmed"
 //    ArrayList<String> names = new ArrayList<>(Arrays.asList("Ahmed", "John", Eric", "Ahmed".));
