@@ -1,4 +1,4 @@
-package Maksim;
+package Maksim.Extra_Tasks;
 
 public class PolindromDigit {
     public static boolean isPalNum(int num) {

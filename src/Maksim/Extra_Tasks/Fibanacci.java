@@ -1,4 +1,4 @@
-package Maksim;
+package Maksim.Extra_Tasks;
 
 import java.util.ArrayList;
 
