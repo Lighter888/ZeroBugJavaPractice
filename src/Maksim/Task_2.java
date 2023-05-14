@@ -15,6 +15,15 @@ public class Task_2 {
 //    Ex:  same("abc",  "cab"); -> true
 //    same("abc",  "abb"); -> false:
 
+
+    public static boolean isSameStr(String g, String h) {
+        char[] charG = g.toCharArray();
+        char[] charH = h.toCharArray();
+        Arrays.sort(charG);
+        Arrays.sort(charH);
+        return Arrays.equals(charG, charH);
+    }
+
     public static boolean checkArrayStr(String[] str) {
 
         boolean result = true;
@@ -26,8 +35,7 @@ public class Task_2 {
             Arrays.sort(chars);
             str[i] = new String(chars);
 
-            if (example.equals(str[i])) {
-            } else result = false;
+            result = example.equals(str[i]);
         }
         return result;
     }
@@ -41,16 +49,16 @@ public class Task_2 {
                     .collect(Collectors.joining());
         }
         for (String s : list) {
-            if (example.equals(s)) {
-                result = true;
-            } else result = false;
+            result = example.equals(s);
         }
         return result;
     }
 
-
-
     public static void main(String[] args) {
+
+        String g="abc";
+        String h="cab";
+        System.out.println(isSameStr(g,h));
 
         String[] str = new String[] {"abc", "cab", "bac"};
         System.out.println(checkArrayStr(str));

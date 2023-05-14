@@ -9,7 +9,7 @@ Ex:  FrequencyOfChars("AAABBCDD") ==> A3B2C1D2
 
 
 2.
-use Array sort
+use Arrays.sort
 Write a return method that check if a string is build out of the same letters as another string.
    String g="abc";
    String h="cab";

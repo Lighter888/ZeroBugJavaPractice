@@ -11,18 +11,17 @@ public class Task_26 {
     Armstrong number.
      */
 
-    public static boolean isArmstrongNum(Integer num) {
+    public static boolean isArmstrongNum(int num) {
 
         int numResult = 0;
-        String[] numbers = num.toString().split("");
+        String[] numbers = Integer.toString(num).split("");
         for (String number : numbers) {
             numResult += Integer.parseInt(number) * Integer.parseInt(number) * Integer.parseInt(number);
         }
         return numResult == num;
     }
-
     public static void main(String[] args) {
 
-        System.out.println(isArmstrongNum(407));
+        System.out.println(isArmstrongNum(153));
     }
 }

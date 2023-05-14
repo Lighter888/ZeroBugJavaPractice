@@ -32,7 +32,20 @@ could return [0,1,2,-3] or [-2,1, -4,5]. The answer [1, -1,1,3] would be incorre
  */
 
 public class Task_30 {
+    public static int[] unique_1(int num) {
 
+        int[] arrUniq = new int[num];
+        Random random = new Random();
+        arrUniq[0] = random.nextInt(-num, num);
+        int sum = arrUniq[0];
+        for (int i = 1; i < arrUniq.length; i++) {
+            arrUniq[i] = arrUniq[0] + i;
+            sum += arrUniq[i];
+
+        }
+        arrUniq[arrUniq.length - 1] = -sum;
+        return arrUniq;
+    }
 
     public static int[] unique_2(int num) {
         if (num > 1 && num < 100) {
@@ -63,6 +76,7 @@ public class Task_30 {
     public static void main(String[] args) {
 
         System.out.println(Arrays.toString(unique_2(10)));
+        System.out.println(Arrays.toString(unique_1(10)));
 
      }
 }
