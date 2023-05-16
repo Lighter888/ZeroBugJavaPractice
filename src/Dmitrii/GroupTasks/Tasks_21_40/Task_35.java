@@ -1,6 +1,5 @@
-package Dmitrii.GroupTasks;
+package Dmitrii.GroupTasks.Tasks_21_40;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;

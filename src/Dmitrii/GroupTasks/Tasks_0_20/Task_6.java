@@ -1,4 +1,4 @@
-package Dmitrii.GroupTasks;
+package Dmitrii.GroupTasks.Tasks_0_20;
 
 /*
 String h="AAABBBCCC";

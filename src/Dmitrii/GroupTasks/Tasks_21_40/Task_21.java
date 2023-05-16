@@ -1,4 +1,4 @@
-package Dmitrii.GroupTasks;
+package Dmitrii.GroupTasks.Tasks_21_40;
 
 public class Task_21 {
     public static void main(String[] args){

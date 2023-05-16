@@ -1,4 +1,4 @@
-package Dmitrii.GroupTasks;
+package Dmitrii.GroupTasks.Tasks_0_20;
 
 import java.sql.SQLOutput;
 import java.util.ArrayList;
