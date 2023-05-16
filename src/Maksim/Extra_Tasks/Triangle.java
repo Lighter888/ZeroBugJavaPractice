@@ -2,16 +2,18 @@ package Maksim.Extra_Tasks;
 
 public class Triangle {
 
-    public static void main(String[] args) {
+    public static void buildTriangle(int n) {
 
-        int n = 3;
-
-        for (int i = 0; i <= n; i++) {
-            if (i != n) {
-                System.out.println(" ".repeat(n - i) + "/" + " ".repeat(2 * i) + "\\");
+        for (int i = 0; i <= n - 1; i++) {
+            if (i != n - 1) {
+                System.out.println(" ".repeat(n - i - 1) + "/" + "  ".repeat(i) + "\\");
             } else {
-                System.out.println("/" + "_".repeat(2 * i) + "\\");
+                System.out.println("/" + "__".repeat(i) + "\\");
             }
         }
+    }
+    public static void main(String[] args) {
+
+        buildTriangle(3);
     }
 }
