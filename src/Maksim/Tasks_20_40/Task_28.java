@@ -2,7 +2,6 @@ package Maksim.Tasks_20_40;
 
 import java.util.HashMap;
 import java.util.Map;
-
 public class Task_28 {
 
 /*
