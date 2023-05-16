@@ -1,4 +1,4 @@
-package Dmitrii.GroupTasks;
+package Dmitrii.GroupTasks.Tasks_41_60;
 
 import org.w3c.dom.ls.LSOutput;
 

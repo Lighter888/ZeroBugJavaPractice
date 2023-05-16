@@ -1,4 +1,4 @@
-package Dmitrii.GroupTasks;
+package Dmitrii.GroupTasks.Tasks_21_40;
 
 import java.util.Arrays;
 

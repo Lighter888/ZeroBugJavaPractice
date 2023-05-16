@@ -1,4 +1,4 @@
-package Dmitrii.GroupTasks;
+package Dmitrii.GroupTasks.Tasks_0_20;
 
 public class Task_3 {
 

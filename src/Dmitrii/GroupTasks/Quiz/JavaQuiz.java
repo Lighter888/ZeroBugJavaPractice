@@ -79,7 +79,8 @@ public class JavaQuiz implements Quiz {
 
     @Override
     public void calculateScore(){
-        double percentageOfAnswer = ((double) correctAnswer / NUMBER_OF_ASKED_QUESTIONS) * 100;
+        double percentageOfAnswer = (correctAnswer / NUMBER_OF_ASKED_QUESTIONS) * 100.0;
+        System.out.println(percentageOfAnswer);
 
         if(Math.round(percentageOfAnswer)>=80){
             System.out.println("Great job! You scored "+ correctAnswer +" out of "+NUMBER_OF_ASKED_QUESTIONS+" and you complete "+Math.round(percentageOfAnswer)+"% of quiz with positive answers!");
@@ -122,5 +123,4 @@ public class JavaQuiz implements Quiz {
         }  while( i< NUMBER_OF_ASKED_QUESTIONS);
         calculateScore();
     }
-
 }

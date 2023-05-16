@@ -1,4 +1,4 @@
-package Dmitrii.GroupTasks;
+package Dmitrii.GroupTasks.Tasks_41_60;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

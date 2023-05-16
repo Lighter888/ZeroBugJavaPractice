@@ -1,4 +1,4 @@
-package Dmitrii.GroupTasks;
+package Dmitrii.GroupTasks.Tasks_61_80;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
