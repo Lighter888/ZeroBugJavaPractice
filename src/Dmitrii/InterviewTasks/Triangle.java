@@ -1,4 +1,4 @@
-package Dmitrii.GroupTasks;
+package Dmitrii.InterviewTasks;
 
 import java.util.Scanner;
 
