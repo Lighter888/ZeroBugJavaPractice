@@ -1362,15 +1362,14 @@ System.out.println(sm.last());
 
 //=====================================================================//
 //37
-   int [] arr = {1,4,8,0,3,11,26,2};
-        int y[] =new int[arr.length/2];
-ArrayList<Integer>t=new ArrayList<>();
-int a=0;
+    int [] arr = {1,4,8,0,3,11,26,2};
+    int y[] =new int[arr.length/2];
+    ArrayList<Integer>t=new ArrayList<>();
+    int a=0;
         for(int i=0;i<arr.length;i++){
             y[a++]=arr[i];
             t.add(arr[i]);
-i++;
-
+            i++;
         }
         System.out.println(t);
         System.out.println(Arrays.toString(y));

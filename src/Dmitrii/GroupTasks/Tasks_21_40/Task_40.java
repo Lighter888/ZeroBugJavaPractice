@@ -3,7 +3,7 @@ package Dmitrii.GroupTasks.Tasks_21_40;
 import java.util.ArrayList;
 
 public class Task_40 {
-//    //40  FIND missing number
+//    //40  FIND missing numbers
 //
 //    int r[]={-1,3,5,6,7,9,13,18,70,80,1400,1401,1405};
     public static void main(String[] args){
