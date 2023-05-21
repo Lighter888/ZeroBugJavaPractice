@@ -19,6 +19,8 @@ public class Task_40 {
             list.removeIf(x -> x == i);
         }
 
+
+        // someone did this solution
         ArrayList<Integer> listOld = new ArrayList<>();
 
         for(int e = 0; e < r.length - 1; e++){
@@ -28,6 +30,7 @@ public class Task_40 {
         }
 
         System.out.println(listOld);
+
         System.out.println(list);
     }
 

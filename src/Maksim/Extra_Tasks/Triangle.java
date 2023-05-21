@@ -27,7 +27,7 @@ public class Triangle {
     }
     public static void main(String[] args) {
 
-        buildTriangle(3);
+        buildTriangle(10);
         System.out.println();
         buildSquare(4);
     }
