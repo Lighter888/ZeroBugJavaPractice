@@ -1,4 +1,4 @@
-package Dmitrii;
+package Dmitrii.Lambda_PojoBean_MethodReferenceOperator_etc.Lambda;
 
 import java.time.Duration;
 
