@@ -319,10 +319,9 @@ int num = -123;
            //-321
 
 
-//43 Perfect number is the sum of numbers that perfectNum divided by sum
+//43
+Perfect number is the sum of numbers that perfectNum divided by sum
 int perfectNum =28;
-//eger regeme bolunen regemlerin cemi onun ozune beraberdirse perfect numberdi
-
 
 //44  COMBINE
 int[] a = {1,2};
