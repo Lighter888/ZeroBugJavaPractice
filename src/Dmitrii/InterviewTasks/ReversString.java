@@ -3,7 +3,6 @@ package Dmitrii.InterviewTasks;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Locale;
 import java.util.stream.Collectors;
 
 public class ReversString {
@@ -12,11 +11,17 @@ public class ReversString {
         String string = "Hello World";
         String input = "Geeks For Geeks";
         char[] charStr = string.toCharArray();
+        System.out.println("*************************************");
         System.out.println("Trough For Loop: " + reverseStrForLoop(string));
+        System.out.println("*************************************");
         System.out.println("Trough String Builder: " + reverseStrBuilder(string));
+        System.out.println("*************************************");
         System.out.println("Uses char Array: " + reversStrCharArr(charStr));
+        System.out.println("*************************************");
         System.out.println("Uses Arraylist: " + reverseStrList(input));
+        System.out.println("*************************************");
         System.out.println("Uses Another Way: " + anotherWayReversString(string));
+        System.out.println("*************************************");
 
     }
 
@@ -42,11 +47,30 @@ public class ReversString {
     }
 
     public static String reverseStrList(String str) {
+//        List<Character> arrList = new ArrayList<>();
+//        for (Character character : str.toCharArray()) {
+//            arrList.add(character);
+//        }
+//        Collections.reverse(arrList);
+//        return arrList.toString().replace(", ", "").replace("[","").replace("]","");
+
         List<Character> arrList = new ArrayList<>();
-        for (Character character : str.toCharArray()) {
-            arrList.add(character);
+        String reverse = "";
+
+        for (char c: str.toCharArray()){
+            arrList.add(c);
         }
         Collections.reverse(arrList);
+
+//        // Variant 1
+//        Object[] arr2 = arrList.toArray();
+//        for(int i = 0; i <arr2.length; i++) {
+//            reverse += arr2[i];
+//        }
+//        System.out.println(reverse);
+//        return str;
+
+        // Variant 2
         return arrList.toString().replace(", ", "").replace("[","").replace("]","");
     }
 
