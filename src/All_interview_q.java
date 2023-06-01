@@ -525,8 +525,8 @@ int pivot = 8
 In case we need to have pivot int inside the array the output should be: [5, 7, 3, 8, 9, 1, 0]
 
 //75
- ArrayList<String> gg = new ArrayList<>(Arrays.asList("three,four", "five","seven"));
-print out
+ ArrayList<String> gg = new ArrayList<>(Arrays.asList("three, four", "five", "seven"));
+ print out
  four five seven
 
  //76
@@ -2041,7 +2041,7 @@ int a=25;
 int b=10;
         Map<Integer,Integer> map= new HashMap<>();
         map.put(a,b);
-       int sum=0;
+        int sum=0;
         for(Map.Entry<Integer, Integer> i: map.entrySet()) {
             sum=Math.subtractExact(i.getKey(),i.getValue());
         }

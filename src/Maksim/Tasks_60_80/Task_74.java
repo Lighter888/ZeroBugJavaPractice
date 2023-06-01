@@ -26,7 +26,7 @@ public class Task_74 {
 
     public static void main(String[] args) {
         int[] arr = {5, 7, 3, 9, 1, 0, 9};
-        int pivot = 8;
+        int pivot = 4;
         System.out.println(Arrays.toString(addNumInToArray(arr, pivot)));
     }
 }
