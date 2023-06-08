@@ -1,5 +1,8 @@
 package Dmitrii.GroupTasks.Tasks_61_80;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Task_63 {
 
 //    //63
@@ -20,6 +23,9 @@ public class Task_63 {
 public static void main(String[] args) {
     int[][] a = {  {9, 8, 7}, {6},  {5,4,3,2,1,0}   };
     System.out.println(task63( a));
+
+    List<Integer> arrList = new ArrayList<>();
+
 
 
 }
