@@ -37,8 +37,6 @@ public class Fibonacci {
                 fibonacciList.add(sum);
             }
         }
-
-
        return fibonacciList;
     }
 }
