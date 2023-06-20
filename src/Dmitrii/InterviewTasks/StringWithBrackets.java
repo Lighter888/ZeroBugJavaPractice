@@ -2,7 +2,6 @@ package Dmitrii.InterviewTasks;
 
 public class StringWithBrackets {
 
-
     public static void main(String[] args) {
         String str = "{{{{}()[[]]}}}";
         System.out.println(task(str));

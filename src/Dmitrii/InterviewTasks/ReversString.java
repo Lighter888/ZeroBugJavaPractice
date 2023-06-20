@@ -22,7 +22,6 @@ public class ReversString {
         System.out.println("*************************************");
         System.out.println("Uses Another Way: " + anotherWayReversString(string));
         System.out.println("*************************************");
-
     }
 
     public static String reverseStrForLoop(String str) {
