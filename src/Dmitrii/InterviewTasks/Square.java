@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Square {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter your number for create a square shape: ");
         int input = scan.nextInt();
         for (int i = 0; i < input; i++) {
             if (i == 0) {
@@ -22,7 +23,7 @@ public class Square {
                     System.out.print("   ");
                 }
                 System.out.print("  *");
-                System.out.println("");
+                System.out.println();
             }
         }
     }

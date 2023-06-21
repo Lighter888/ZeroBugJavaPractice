@@ -9,7 +9,6 @@ public class ReverseOnlyLettersInWords {
          String inputStr = "Hello students school";
          System.out.println(reversedWordsOfStr(inputStr));
      }
-
      public static String reversedWordsOfStr(String str){
          String reversedWordsStr = "";
          String [] arrStr = str.split(" ");

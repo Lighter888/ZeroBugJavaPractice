@@ -1,8 +1,5 @@
 package Dmitrii.InterviewTasks;
 
-import java.util.Locale;
-import java.util.Scanner;
-
 public class Palindrome {
     public static void main (String[] args){
         String palindromeStr = "Civic".toLowerCase();
