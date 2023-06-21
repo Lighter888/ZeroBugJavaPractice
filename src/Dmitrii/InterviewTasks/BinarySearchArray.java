@@ -1,9 +1,8 @@
 package Dmitrii.InterviewTasks;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
-public class ArrayBinarySearch {
+public class BinarySearchArray {
     public static void main(String[] args) {
 
         int arr[] = {50,10,40,30,20};
