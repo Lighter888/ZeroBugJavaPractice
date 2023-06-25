@@ -11,7 +11,6 @@ public class CountCharacterInString {
         countCharsMaps(str);
     }
     public static void countCharsOnlyLoops(String str) {
-
         String result = "";
         int count = 0;
         for (int i = 0; i < str.length(); i++) {
@@ -27,7 +26,6 @@ public class CountCharacterInString {
         }
         System.out.println(result.replaceFirst(", ", ""));
     }
-
     public static void countCharsMaps(String str){
         Map<Character, Integer> countChar = new HashMap<>();
         Map<Character, Integer> ifMoreThan3 = new HashMap<>();
@@ -46,5 +44,4 @@ public class CountCharacterInString {
         System.out.println(countChar);
         System.out.println("Return characters that are repeated more than 3 times: \n" + ifMoreThan3);
     }
-
 }
