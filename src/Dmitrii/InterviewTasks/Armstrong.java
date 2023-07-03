@@ -20,4 +20,6 @@ public class Armstrong {
         }
         return num == sum;
     }
+
+
 }
