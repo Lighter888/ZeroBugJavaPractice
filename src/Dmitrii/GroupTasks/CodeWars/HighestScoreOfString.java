@@ -3,7 +3,6 @@ package Dmitrii.GroupTasks.CodeWars;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
 public class HighestScoreOfString {
 //    Given a string of words, you need to find the highest scoring word.
@@ -21,15 +20,21 @@ public class HighestScoreOfString {
 
     public static void main(String[] args) {
         String sentence = "Today is good day";
+
+
+        System.out.println("My solution is: " + high1(sentence));
+        System.out.println("Max's solution is: " + high(sentence));
+    }
+    public static String high1(String s){
         char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
         Map<Character, Integer> points = new HashMap<>();
         Map<Integer, String> wordsPoint = new HashMap<>();
         int count = 1;
         for (char each : alphabet) {
-            points.put(each, count);
+      //      points.put(each, count);
             count++;
         }
-        String [] words = sentence.split(" ");
+        String [] words = s.split(" ");
         int sum = 0;
         for (String word : words) {
             for (char letter: word.toLowerCase().toCharArray()) {
@@ -40,10 +45,9 @@ public class HighestScoreOfString {
         }
         Object []arr = wordsPoint.keySet().toArray();
         Arrays.sort(arr);
-
-        System.out.println("My solution is: " + wordsPoint.get(arr[arr.length-1]));
-        System.out.println("Max's solution is: " + high(sentence));
+        return wordsPoint.get(arr[arr.length-1]);
     }
+
 
     //Max solution
     public static String high(String s) {
@@ -53,11 +57,11 @@ public class HighestScoreOfString {
         for (String string : s.split(" ")) {
             for (int i = 0; i < string.length(); i++) {
                 score += (string.charAt(i) - 96);
-                if (score > maxScore) {
-                    maxScore = score;
-                    result = string;
-                }
             }
+        if (score > maxScore) {
+            maxScore = score;
+            result = string;
+        }
             score = 0;
         }
         return result;
