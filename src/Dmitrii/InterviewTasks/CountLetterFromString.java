@@ -1,6 +1,9 @@
 package Dmitrii.InterviewTasks;
 
 public class CountLetterFromString {
+    /*
+    This task from real interview
+     */
     public static void main(String[] args) {
         String str = "aaasddadffgy";
         String newStr = "";
