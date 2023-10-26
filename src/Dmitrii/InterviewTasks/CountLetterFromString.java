@@ -1,21 +1,22 @@
 package Dmitrii.InterviewTasks;
 
 public class CountLetterFromString {
-    /*
-    This task from real interview
-     */
+      /*
+         Write a script that takes in a string input from the user and then prints out the input in the format of {first letter}{times it occurs consecutively}{Second Letter (not matching the first)}{times is occurs consecutively} and so on.
+
+         Example input: aaleeexxssa
+
+         Example Output: a2l1e3x2s2a1
+      */
     public static void main(String[] args) {
-        String str = "aaasddadffgy";
+        String str = "aaleeexxssa";
         String newStr = "";
-        for (int i = 0; i<str.length();i++){
+        for (int i = 1; i<str.length();i++){
             int count = 0;
-            for (int j = 0; j<str.length(); j++){
-                if(str.charAt(i)==str.charAt(j)){
+
+                if(str.charAt(i-1)==str.charAt(i)){
                     count++;
-                }
-            }
-            if(!newStr.contains(str.charAt(i)+"")){
-                newStr = newStr + str.charAt(i) + count;
+                    newStr = newStr + str.charAt(i) + count;
             }
         }
         System.out.println(newStr);
