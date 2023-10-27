@@ -5,7 +5,7 @@ public class CountCharactersInString {
     public static void countCharacters(String str) {
 
         String result = "";
-        int count = 0;
+        int count;
         for (int i = 0; i < str.length(); i++) {
             count = 0;
             for (int j = i; j < str.length(); j++) {
