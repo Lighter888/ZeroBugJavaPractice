@@ -1,5 +1,5 @@
 package Dmitrii.InterviewTasks;
 
 public class GitPractice {
-    //My new comment from second Dev
+    // What? WHy you change it? It was my code!
 }
