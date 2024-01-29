@@ -1,5 +1,5 @@
 package Dmitrii.InterviewTasks;
 
 public class GitPractice {
-    //My new comment from second Dev
+    // Now I try to make merge conflict and resolve it
 }
