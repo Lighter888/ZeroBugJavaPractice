@@ -1,4 +1,4 @@
-package Dmitrii.Lambda_PojoBean_MethodReferenceOperator_etc.Lambda;
+package Dmitrii.FromRealInterview.FidelityVendor;
 
 import java.util.Arrays;
 

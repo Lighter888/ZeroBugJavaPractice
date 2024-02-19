@@ -1,14 +1,14 @@
-package Dmitrii.Lambda_PojoBean_MethodReferenceOperator_etc.Lambda;
+package Dmitrii.FromRealInterview.FidelityVendor;
 
-import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Interview {
+public class FirstTask {
     public static void main (String[] args){
         returnLetters1(10);
         returnLetters2(1);
     }
+    // Mapping strategy
     public static void returnLetters1 (int num) {
         Map<Integer, String> map = new HashMap<>();
         map.put(2, "abc");
@@ -30,6 +30,7 @@ public class Interview {
         }
     }
 
+    // Switch case solution
     public static void returnLetters2 (int num){
         switch (num){
             case 2:
